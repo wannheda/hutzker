@@ -1,0 +1,337 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+html{height: 100%}
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #f1f1f1;
+	color: #333;
+	font-family: "Calibri", sans-serif;
+	font-size: 1.2em;
+	line-height: 135%;
+	float: left;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /*ie8*/
+}
+ul {
+	margin-left: 5%;
+}
+
+/*стили ссылок*/
+a {
+	color: #A9A9A9;
+	text-decoration: none;
+}
+a:hover {
+	color: #fff;
+}
+a, a:hover {
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+
+.clear { /*отступы*/
+	clear: both;
+}
+
+/*стили для шапки*/
+header {
+	width: 100%;
+	height: 6%;
+	float: left;
+	background-color: #181820;
+	margin-bottom: 0px;
+}
+header #logo {
+	width: 15%;
+	float: left;
+	padding: 1%;
+}
+header #search {
+	width: 30%;
+	float: left;
+	padding: 1%;
+}
+header #search #search_form #search_line {
+	width: 70%;
+	height: 30px;
+	float: left;
+	border-radius: 2px;
+}
+header #search #search_form #search_b {
+	width: 20%;
+	height: 30px;
+	float: left;
+	border-radius: 2px;
+	border: 2px solid #2e2e3c;
+	font-size: 1em;
+	background-color: #181820;
+	color: #A9A9A9;
+}
+header #search #search_form #search_b:hover {
+	cursor: pointer;
+	background-color: #2e2e3c;
+	color: #fafafa;
+}
+header #href {
+	width: 50%;
+	float: right;
+}
+header #logo a {
+	color: #fafafa;
+	font-size: 2em;
+	font-family: Calibri, sans-serif;
+	font-weight: bold;
+}
+header #logo img{
+	height: 25px;
+	width: 30px;
+}
+header #href #add, #exit {
+	float: left;
+	font-size: 1em;
+	padding-top: 2%;
+}
+header #href #add {
+	padding-left: 400px;
+	padding-right: 20px;
+}
+
+/*content*/
+#wrapper {
+	width: 94%;
+	margin-top: 7%;
+	margin-left: 2%;
+	margin-bottom: 7%;
+	float: left;
+}
+#wrapper #leftCol {
+	width: 100%;
+	margin-right: 2%;
+	float: left;
+}
+
+/*стили товара*/
+#product {
+	width: 98%;
+	height: 75%;
+	margin: 1%;
+	margin-top: 7%;
+	float: left;
+}
+/*#bot {
+	width: 98%;
+	height: 10%;
+	margin-top: 3%;
+}
+#bot #mes {
+	width: 100%;
+	font-size: 1.5em;
+	padding: 1%;
+	margin-top: 3%;
+	background-color: #fafafa;
+	border: 1px solid silver;
+	color: #696969;
+}*/
+#product #name {
+	font-size: 1.5em;
+	padding: 1%;
+	margin-bottom: 1%;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	border: 1px solid silver;
+	color: #696969;
+}
+#one_article {
+	width: 60%;
+	float: left;
+	margin-top: 2%;
+	color: #000;
+}
+#product #one_article img {
+	width: 100%;
+	height: 500px;
+	text-align: left;
+	box-sizing: border-box;
+	border: 1px solid silver;
+}
+#product #char {
+	width: 38%;
+	margin-left: 1%;
+	margin-top: 2%;
+	float: right;
+}
+#product #char h4 {
+	font-size: 1.5em;
+	margin-bottom: 10%;
+	color: #696969;
+}
+#product #char p {
+	font-size: 1.1em;
+	margin-bottom: 4%;
+}
+#product #char h2 {
+	font-size: 1.7em;
+	margin-top: 30%;
+	margin-left: 50%;
+}
+
+/*Стили топовых комплектующих*/
+#wrapper #leftCol #article	{
+	width: 23%;
+	background-color: #fafafa;
+	padding: 1%;
+	height: 400px;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 5px;
+	box-sizing: border-box;
+	border: 1px solid silver;
+	color: #000;
+}
+#wrapper #leftCol #article h4 {
+	margin-top: 10px;
+	color: #1a1a1a;
+}
+#wrapper #leftCol #article	a {
+	color: #1a1a1a;
+}
+#wrapper #leftCol #article	a:hover {
+	color: black;
+}
+#wrapper #leftCol #article	img {
+	width: 100%;
+	height: 40%;
+}
+#wrapper #leftCol #article p {
+	font-size: 0.6em;
+	margin: 0.1em;
+	height: 12px;
+	text-align: left;
+	color: #696969;
+}
+#wrapper #leftCol #article h2 {
+	margin: 0.1em;
+	margin-right: 20px;
+	margin-top: 20px;
+	text-align: right;
+	color: #1a1a1a;
+}
+
+/*Страничка добавления, изменения и удаления*/
+#wrapper #leftCol #filt {
+	width: 61%;
+	float: left;
+	margin-left: 20%;
+	margin-bottom: 10px;
+}
+#wrapper #leftCol #filt select {
+	width: 100%;
+	height: 40px;
+	background-color: #181820;
+	border-radius: 5px;
+	color: #A9A9A9;
+	font-size: 0.8em;
+	padding: 2px;
+}
+#wrapper #leftCol #filt select:hover {
+	background-color: #2e2e3c;
+}
+#wrapper #leftCol input#checkIn:hover {
+	border: 2px solid #1E90FF;
+	cursor: pointer;
+}
+#wrapper #leftCol input {
+	width: 60%;
+	margin-left: 20%;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+#wrapper #leftCol input:focus, #wrapper #leftCol textarea:focus {
+	border: 2px solid #4682B4;
+}
+#wrapper #leftCol input#add:hover, #wrapper #leftCol input#edit:hover {
+	cursor: pointer;
+	background-color: #2e2e3c;
+	color: #fafafa;
+}
+#wrapper #leftCol input#edit, #wrapper #leftCol input#add {
+	width: 40%;
+	height: 50px;
+	float: center;
+	margin-left: 30%;
+	margin-top: 1%;
+	margin-right: 2%;
+	border-radius: 5px;
+	border: 2px solid #2e2e3c;
+	font-size: 1em;
+	background-color: #181820;
+	color: #A9A9A9;
+}
+#wrapper #leftCol textarea {
+	width: 60%;
+	height: 150px;
+	margin-left: 20%;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 1.4em;
+	resize: none;
+}
+#wrapper #leftCol #messageShow {
+	font-size: 1.2em;
+	float: left;
+	color: #4682B4;
+	width: 100%;
+	text-align: center;
+}
+
+/*Cтили сообщений*/
+#wrapper #leftCol #message	{
+	width: 80%;
+	text-align: center;
+	margin-bottom: 3%;
+	margin-left: 9%;
+	padding: 2%;
+	background-color: #fafafa;
+	border: 1px solid silver;
+	color: #000;
+}
+#wrapper #leftCol #message h2 {
+	padding-bottom: 3%;
+}	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+	
